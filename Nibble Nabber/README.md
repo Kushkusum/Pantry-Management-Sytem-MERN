@@ -93,16 +93,30 @@ PORT=3000
 
 ## API Endpoints
 Pantry Management
+
 GET /api/pantry - Fetch all pantry items
+
 POST /api/pantry - Add a new pantry item
+
 PUT /api/pantry/:id - Update an existing pantry item
+
 DELETE /api/pantry/:id - Delete a pantry item
+
+
 Shopping List
+
 GET /api/shopping-list - Fetch all shopping list items
+
 POST /api/shopping-list - Add a new shopping list item
+
 PUT /api/shopping-list/:id - Update a shopping list item
+
 DELETE /api/shopping-list/:id - Delete a shopping list item
+
+
 User Authentication
+
 POST /api/users/signup - Register a new user
+
 POST /api/users/login - Authenticate and log in
 
