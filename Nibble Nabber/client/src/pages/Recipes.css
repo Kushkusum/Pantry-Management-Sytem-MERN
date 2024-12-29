@@ -1,0 +1,124 @@
+/* General layout */
+.recipes-container {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #dfd3d1, #beb1b4);
+  padding: 40px 20px;
+  min-height: 100vh;
+  margin: 0;
+  color: #4f2f2f; /* Warm darker pink for text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading styling */
+.recipes-container h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #0f0e0e; /* Expiry-themed pink */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Recipe card grid layout */
+.recipe-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* 3 items per row */
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* Individual recipe card styling */
+.recipe-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(211, 107, 107, 0.1); /* Expiry pink shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(211, 107, 107, 0.2);
+}
+
+.recipe-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Recipe details styling */
+.recipe-card h3 {
+  font-size: 1.6rem;
+  color: #4f2f2f; /* Warm darker pink for text */
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.recipe-card p {
+  color: #a15959; /* Muted warm pink for details */
+  text-align: center;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Link to recipe */
+.recipe-link {
+  background-color: #d36b6b; /* Expiry pink */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.recipe-link:hover {
+  background-color: #b55656; /* Darker expiry pink */
+  transform: scale(1.05);
+}
+
+/* No recipes message */
+.no-recipes {
+  font-size: 1.2rem;
+  color: #b55656; /* Expiry pink */
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Spinner for loading state */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f0d6d6; /* Soft pink-gray */
+  border-top: 5px solid #d36b6b; /* Expiry pink */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,179 @@
+/* General layout */
+.pantry-container {
+  font-family: 'Poppins', sans-serif;
+ background: linear-gradient(145deg, #dfd3d1, #beb1b4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  margin: 0;
+  color: #4f2f2f; /* Warm darker pink for text */
+}
+
+.pantry-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #0e0d0d; /* Expiry-themed pink */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Input form styling */
+.pantry-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 244, 243, 0.9); /* Light pastel pink */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(211, 107, 107, 0.2);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pantry-container form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(211, 107, 107, 0.3); /* Expiry pink shadow */
+}
+
+/* Input Fields */
+.pantry-container input[type="text"],
+.pantry-container input[type="number"],
+.pantry-container input[type="date"] {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #f0d6d6; /* Light pastel pink-gray */
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background: #fff8f7; /* Soft pink background */
+}
+
+.pantry-container input:focus-visible {
+  border-color: #d36b6b; /* Expiry-themed pink */
+  outline: none;
+  box-shadow: 0 0 5px rgba(211, 107, 107, 0.6);
+}
+
+/* Buttons */
+.pantry-container button {
+  padding: 12px 20px;
+  background-color: #d36b6b; /* Expiry-themed pink */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.pantry-container button:hover {
+  background-color: #b55656; /* Darker expiry pink */
+  transform: scale(1.05);
+}
+
+.pantry-container button:focus {
+  outline: none;
+}
+
+/* Grid layout for pantry items */
+.pantry-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* Pantry item card */
+.pantry-item-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(211, 107, 107, 0.1); /* Expiry pink shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.pantry-item-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(211, 107, 107, 0.2);
+}
+
+
+.pantry-item-card img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container */
+  border-radius: 8px; /* Optional: Add rounded corners for aesthetics */
+  max-height: 200px; /* Optional: Limit the max height to keep cards uniform */
+}
+
+.pantry-item-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Expiry details */
+.pantry-item-details h3 {
+  font-size: 1.5rem;
+  color: #4f2f2f; /* Warm darker pink for item names */
+  margin: 10px 0;
+}
+
+.pantry-item-details p {
+  color: #a15959; /* Warm muted pink for details */
+  margin: 5px 0;
+}
+
+.pantry-item-details .expiry {
+  color: #b55656; /* Expiry pink for expiry dates */
+  font-weight: bold;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #f0b4b4; /* Soft pastel pink */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.delete-btn:hover {
+  background-color: #d36b6b; /* Expiry-themed hover */
+  transform: scale(1.05);
+}
+
+.delete-btn:focus {
+  outline: none;
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f0d6d6; /* Soft pink-gray */
+  border-top: 5px solid #d36b6b; /* Expiry pink */
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

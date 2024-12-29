@@ -1,0 +1,120 @@
+/* BudgetPage.css */
+.budget-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #dfd3d1, #beb1b4);
+  padding: 20px;
+}
+
+.budget-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.budget-content:hover {
+  transform: scale(1.02);
+}
+
+.budget-header {
+  font-size: 2rem;
+  color: #f15c76; /* Bright pastel pink */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.budget-current {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.budget-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+.budget-input:focus {
+  border-color: #ff6a88; /* Vibrant pink */
+  box-shadow: 0 0 5px rgba(255, 106, 136, 0.6);
+}
+
+.budget-button {
+  padding: 12px 20px;
+  background-color: #ff6a88; /* Vibrant pastel pink */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.budget-button:hover {
+  background-color: #ff9a8b; /* Softer pink */
+  transform: scale(1.05);
+}
+
+.budget-button:active {
+  background-color: #f15c76; /* Slightly darker pastel pink */
+}
+
+.error-message {
+  color: #f15c76; /* Bright pastel pink for errors */
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.confirmation-message {
+  color: #ff9a8b; /* Softer pink for confirmations */
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.history-container {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.history-container h2 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.history-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.history-container li {
+  font-size: 1rem;
+  color: #555;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0; /* Light gray */
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ff6a88; /* Vibrant pastel pink */
+  border-radius: 5px;
+}

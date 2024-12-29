@@ -1,0 +1,124 @@
+/* Main Container */
+.home-container {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(145deg, #dfd3d1, #beb1b4); /* Light gradient background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Header */
+.home-header {
+  margin-bottom: 50px;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f15c76; /* Bright pastel pink */
+}
+
+.app-subtitle {
+  font-size: 1.2rem;
+  color: #555; /* Subtle gray for contrast */
+  margin-top: 10px;
+}
+
+/* Image and Text Section */
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hero-image {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-text {
+  padding: 0 40px;
+  max-width: 500px;
+}
+
+.home-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.home-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+.get-started-btn {
+  margin-top: 30px;
+  padding: 15px 40px;
+  background-color: #ff6a88; /* Vibrant pastel pink */
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #ff9a8b; /* Softer pink */
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.feature-item {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: #f15c76; /* Bright pastel pink */
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  background-color: #f15c76; /* Bright pastel pink */
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}

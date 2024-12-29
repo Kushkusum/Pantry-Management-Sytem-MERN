@@ -1,0 +1,142 @@
+/* Expiry.css */
+
+/* General layout */
+.expiry-container {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #dfd3d1, #beb1b4);
+  padding: 40px 20px;
+  min-height: 100vh;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading styling */
+.expiry-container h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #000; /* Changed from white (#fff) to black (#000) */
+  font-weight: bold; /* Ensure the text is bold */
+  text-align: center;
+  
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  
+}
+/* Add this to your Expiry.css file */
+
+/* Used item card */
+.expiry-item-card.used {
+  background-color: #d3ffd3; /* Light green background for used items */
+  text-decoration: line-through; /* Strike-through the text to mark as used */
+  opacity: 0.6; /* Optional: reduce opacity to make it appear used */
+}
+
+/* Button to mark item as used */
+.mark-used-btn {
+  background-color: #ff6a88;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mark-used-btn:hover {
+  background-color: #ff9a8b;
+  transform: scale(1.05);
+}
+
+
+/* Individual item card */
+.expiry-item-card {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.expiry-item-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Expiry item title */
+.expiry-item-card h3 {
+  font-size: 1.8rem;
+  color: #ff6a88;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Expiry item details */
+.expiry-item-card p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Expiry item date */
+.expiry-item-card p.expiry-date {
+  font-size: 1rem;
+  color: #f15c76;
+  font-style: italic;
+}
+
+/* Button to mark item as used */
+.mark-used-btn {
+  background-color: #ff6a88;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mark-used-btn:hover {
+  background-color: #ff9a8b;
+  transform: scale(1.05);
+}
+
+/* Container for items, displayed in a row for mobile and flexible layout */
+.expiry-items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+@media (min-width: 600px) {
+  .expiry-items-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .expiry-item-card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 900px) {
+  .expiry-item-card {
+    width: 30%;
+  }
+}

@@ -1,0 +1,126 @@
+/* Main Navbar Container */
+.MainNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(145deg, #dfd3d1, #beb1b4);
+  height: 64px;
+  padding: 0 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo Section */
+.Logo img {
+  width: 180px;
+  height: 180px;
+}
+
+/* Navbar Links */
+.desk-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #bb6666; /* Neutral pastel tone */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  color: #ff6a88; /* Bright pastel pink on hover */
+  background-color: rgba(255, 106, 136, 0.1); /* Light pastel pink background */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.nav-link.active {
+  color: #ff6a88; /* Vibrant pastel pink for active link */
+  font-weight: bold;
+  background-color: rgba(255, 106, 136, 0.2); /* Subtle background for active state */
+  padding: 6px 12px; /* Slightly larger padding for emphasis */
+}
+
+/* Cart Icon Container */
+.cart-icon-container {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff6a88; /* Vibrant pastel pink for cart count */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-icon-container:hover .cart-count {
+  background-color: #f15c76; /* Deeper pastel pink on hover */
+}
+
+/* Cart Icon */
+.cart-icon-container:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: transform 0.2s ease;
+}
+
+/* SignUp Button */
+.signup-btn {
+  background-color: #ff6a88; /* Vibrant pastel pink */
+  color: white;
+  font-weight: 500;
+  border-radius: 50px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-btn:hover {
+  background-color: #f15c76; /* Slightly deeper pastel pink on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.signup-btn:active {
+  background-color: #d9505b; /* Slightly muted pink for active click */
+  transform: scale(0.98); /* Subtle press effect */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .MainNavbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .desk-navbar {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .Logo img {
+    width: 160px; /* Smaller logo on mobile */
+  }
+}
