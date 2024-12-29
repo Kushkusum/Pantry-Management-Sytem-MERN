@@ -82,13 +82,16 @@ Instructions on how to use the project:
 - Access the application at `http://localhost:PORT`
 
 
-##.env file contents
+## .env file contents
 MONGO_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_jwt_secret
+
 PORT=3000
 
 
-##API Endpoints
+
+## API Endpoints
 Pantry Management
 GET /api/pantry - Fetch all pantry items
 POST /api/pantry - Add a new pantry item
